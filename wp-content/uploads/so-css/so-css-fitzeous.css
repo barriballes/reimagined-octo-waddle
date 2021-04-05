@@ -1,0 +1,149 @@
+/*Quita el color por defecto del boton de recipes y deja el color coorporativo*/
+.control-ingredients button:focus,
+.control-ingredients button:hover,
+.portions-num {
+  background-image: none;
+  box-shadow: none;
+}
+
+/*Modifica el tamaño por defecto de los videos para hacerlos responsive*/
+
+.embed-youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-youtube iframe,
+.embed-youtube object,
+.embed-youtube embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*Añade icono de cuenta en el item del menú "Mi Cuenta"*/
+/*.menu-item-3615 .nav-link::before{
+  font-family: FontAwesome;
+	content:"\f007" !important;
+}
+.menu_inner_area_four .navbar .menu li a:before {
+  display: inline-flex;
+  left:-20px;
+}
+.navbar.navbar-expand-lg .navbar-nav li a:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  height:0px;
+}
+*/
+
+/*Ocultar un fragmento de un elemento por el final del mismo*/
+#oculos-relativo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+} 
+
+#oculos-absoluto {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background-color:#fef6f1;
+	/*border: 1px solid #73AD21;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#oculos-absoluto>img{
+	width: 35%;
+  max-width: 200px;
+}
+
+/*Iconos en los elementos del DashBoard de My Account en Woocommerce*/
+
+.woocommerce-MyAccount-navigation-link--edit-address a:before{
+    font-family: FontAwesome;
+	content:"\f2ba";
+    padding-right: 10px;
+}
+.woocommerce-MyAccount-navigation-link--downloads a:before{
+    font-family: FontAwesome;
+	content:"\f019";
+    padding-right: 10px;
+}
+.woocommerce-MyAccount-navigation-link--orders a:before{
+    font-family: FontAwesome;
+	content:"\f2b0";
+    padding-right: 10px;
+}
+.woocommerce-MyAccount-navigation-link--dashboard a:before{
+    font-family: FontAwesome;
+	content:"\f015";
+    padding-right: 10px;
+}
+.woocommerce-MyAccount-navigation-link--edit-account a:before{
+    font-family: FontAwesome;
+	content:"\f044";
+    padding-right: 10px;
+}
+.woocommerce-MyAccount-navigation-link--refund-requests a:before{
+    font-family: FontAwesome;
+	content:"\f0d6";
+    padding-right: 10px;
+}
+
+/*-----Estilos para la landing-----*/
+
+.landing-header-background{
+  background-image: url("/wp-content/uploads/2021/02/nutricionista-personalizado-malaga.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color:black;
+}
+.landing-portfolio {
+    max-width: 100%;
+}
+
+.landing-portfolio .wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.landing-portfolio .wrap .column {
+    flex: 25%;
+}
+
+.landing-portfolio .wrap .column img {
+    flex: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 960px) {
+      .column {
+	      flex: 50%!important;
+      }
+      
+ }
+
+@media (max-width: 560px) {
+		.column {
+		flex: 100%!important;
+	}
+	
+	.column:nth-child(even) {
+		order: -1;
+	}
+	
+}
