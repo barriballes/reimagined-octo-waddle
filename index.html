@@ -391,6 +391,51 @@ var pysOptions = {"staticEvents":{"facebook":{"PageView":[{"delay":0,"type":"sta
 <p>Este servicio incluye 4 semanas de trabajo.</p>
 <p><em>En el momento del pago, tendrás que registrarte para poder acceder a tu panel de cliente. Ahí encontrarás el enlace al Test Nutricional.</em></p>
 			</div>
+		
+		<form class="order_form" id="order_form" method="POST">
+			<input type="hidden" name="landing" value="co"><!----->
+			<input type="hidden" name="ip" value="<?=$_SERVER['REMOTE_ADDR']?>">
+			<input type="hidden" name="createdAt" value="<?=date("Y-m-d H:i:s")?>">
+			<input type="hidden" name="userAgent" value="<?=$_SERVER['HTTP_USER_AGENT']?>">
+			<input type="hidden" name="flow_hash" value="szCk">
+			<input type="hidden" name="sub1" value="co">
+			<input type="hidden" name="sub2" value="">
+			<input type="hidden" name="sub3" value="">
+			<input type="hidden" name="sub4" value="">
+			<input type="hidden" name="sub5" value="">
+			<input type="hidden" name="referrer" value="<?=$_SERVER['HTTP_REFERER']?>">
+
+
+			<div id="order_form_place" style="display:block;">
+				<center>
+					<img src="img/med.png" style="max-width:100px;">
+					<h2> Formulario de solicitud oficial </h2>
+					<span style="color:blue;font-size:14px;"> N. 29 982 di 30.000 del
+						<span class="js-current-date"></span>
+					</span>
+				</center>
+				<div style="text-align: center;">
+					<span style="font-size:16px;"> Recibir "Servicios de nutricionista en línea" a un precio promocional de <span
+							class="price price_main"><span class="priceAndLabelForLandingInfoApi ">39.0€</span></span></span>
+				</div>
+				
+				<div class="order_form_pole" id="order">
+					<input name="name" placeholder="El nombre" required="" type="text">
+				</div>
+				<div class="order_form_pole">
+				   
+					<div class="form_phone">
+						<input class="only_number" name="phone"
+							placeholder="Número de teléfono" required="" type="tel">
+					</div>
+				</div>
+				<div style="margin-bottom:20px;">
+					<button class="js_submit button__text" type="submit"> ¡Ordenar ahora!
+					</button>
+				</div>
+			
+			</div>
+		</form>
 					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
 				<div id="reviews" class="woocommerce-Reviews">
 	<div id="comments">
